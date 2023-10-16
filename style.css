@@ -376,15 +376,36 @@ body {
 }
 
 .splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     flex-grow: 1;
     flex-basis: 33vw;
-    background-image: url(https://images.unsplash.com/photo-1478427094460-4c8d412903e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2344&q=80);
+    background-image: url(./assets/burger.jpg);
+    background-size: cover;
+    background-position-x: center;
 }
 
 .banner {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     background-color: rgb(0 0 0 / 0.5);
-    position: relative;
-    top: 20vh;
+    padding: 20px;
+    color: white;
+}
+
+.credit {
+    margin-bottom: 20px;
+    color: lightgray;
+    white-space: nowrap;
+}
+
+a {
+    color: lightgray;
 }
 
 .form {
@@ -394,11 +415,14 @@ body {
     flex-direction: column;
 }
 
+.form > * {
+    padding-left: 40px;
+}
+
 .call-to-action {
     flex-grow: 3;
     background-color: var(--light-grey);
     font-weight: bold;
-    padding-left: 10px;
 }
 
 form {
