@@ -411,31 +411,44 @@ body {
 }
 
 .form {
-    flex-grow: 1;
     flex-basis: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    margin-top: 40px;
 }
 
 .form > * {
     padding-left: 40px;
     padding-right: 40px;
-}
-
-.call-to-action {
-    flex-grow: 3;
-    flex-shrink: 3;
-    background-color: var(--light-grey);
-    font-weight: bold;
-}
-
-form {
-    flex-grow: 2;
-    flex-shrink: 2;
     display: flex;
     flex-direction: column;
 }
 
+.call-to-action {
+    flex: 1;
+    background-color: var(--light-grey);
+    font-weight: bold;
+    justify-content: end;
+}
+
+p:last-child {
+    margin-bottom: 40px;
+}
+
+#form {
+    flex-basis: 300px;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
 .form-info {
-    font-size: 0.8em;
+    font-size: 0.6em;
+    flex: 1;
     color: dimgrey;
     display: flex;
     gap: 60px;
@@ -444,16 +457,32 @@ form {
 .form-info > * {
     display: flex;
     flex-direction: column;
+    flex-basis: 30em;
 }
 
-.form-left {
+ul {
+    list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 20px;
+    padding: 0px;
+    height: 20px
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    height: 2.5em;
+    width: 200px;
+    margin: 0px;
 }
 
 .submission {
-    flex-grow: 3;
+    flex: 1;
     background-color: var(--light-grey);
 }
 
@@ -463,9 +492,19 @@ form {
     font-weight: bolder;
 }
 
+.login {
+    font-size: smaller;
+}
+
 button {
     background-color: var(--orange);
     color: white;
     border-style: none;
     font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 12em;
+    height: 2.5em;
+    border-radius: 7px;
+    white-space: nowrap;
 }
