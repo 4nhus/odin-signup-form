@@ -481,6 +481,10 @@ input {
     margin: 0px;
 }
 
+span {
+    color: red;
+}
+
 .submission {
     flex: 1;
     background-color: var(--light-grey);
